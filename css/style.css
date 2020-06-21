@@ -1,0 +1,304 @@
+/* __________ Configurações gerais __________*/
+body,html{
+	width: 100%;
+	min-width: 320px;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	transition: 1s;
+}
+
+img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.center{
+	max-width: 1200px;
+	width: 85%;
+	margin: 0 auto;
+}
+
+/* ____________________ Cabeçalho ____________________*/
+header{
+	background-image: url('../images/capa.png');
+	background-size: auto;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+header > .center{
+	padding: 20px 0 60px;
+}
+
+header img{
+	padding: 30px 0;
+}
+
+#show_alerta{
+	display: none;
+}
+
+#alerta{
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	background: rgb(109,193,181, 0.9) ;
+	width: 350px;
+	height: 50px;
+	vertical-align: middle;
+	border-radius: 25px;
+	align-items: center;
+	justify-content: center ;
+	font-size: 14px;
+	color: #0B8D6F;
+	border: 1px solid #0B8D6F;
+	z-index: 100;
+}
+
+#check{
+	margin: 0 10px;
+	padding: 3px;
+	font-size: 17px;
+	border: 2px solid #0B8D6F;
+	border-radius: 50%;
+}
+
+#bar{
+	padding: 15px 0;
+	border-left: 1px solid #0B8D6F;
+}
+
+#aviso{
+	padding-left: 10px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* ____________________ Seções de cadastro ____________________*/
+#section_cadastro_dados{
+	background-color: #F3F3F3;
+}
+
+#section_cadastro_dados > .center{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: -60px;
+}
+
+/* ____________________ seção 01 ____________________*/
+#section01{
+	background-color: #fff;
+	width: 48%;
+	padding: 25px 2% 40px;
+	border-radius: 5px;
+}
+
+#section01_header h2{
+	margin: 20px 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#section01_header p{
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+form h2{
+	font-size: 16px;
+	font-weight: 600;
+	margin: 24px 0;
+}
+
+.itens_form{
+	margin: 25px 0;
+}
+
+form label{
+	font-size: 14px;
+	display: inline-block;
+	line-height: 20px;
+}
+
+form input[type=text]{
+	font-size: 14px;
+	display: inline-block;
+	width: 100%;
+	padding: 5px 8px;
+	margin: 5px 0;
+	border: 1px solid #CFCFCF;
+	outline: none;
+}
+
+form label span{
+	color: red;
+}
+
+.feedback{
+	font-size: 10px;
+	line-height: 20px;
+	color: red;
+	display: none;
+}
+
+#form_telefone{
+	display: flex;
+	justify-content: space-between;
+}
+
+.fone{
+	width: 48%;
+}
+
+#submit{
+	background-color: #3570B2;
+	color: #fff;
+	border:  none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 3px #000;
+	outline: none;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+}
+
+#submit:hover{
+	background-color: #483D8B; 
+}
+
+/* ____________________ seção 02 ____________________*/
+#section02{
+	background-color: #EBF0F5;
+	border-top: 8px solid #C4C8CC;
+	width: 48%;
+	padding: 22px 2% 20px;
+	border-radius: 5px;
+	position: relative;
+}
+
+#section02_header h2{
+	margin: 20px 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #403D70;
+}
+
+#section02_header p{
+	font-size: 14px;
+	line-height: 20px;
+	font-style: italic;
+	color: #B7B8B9;
+}
+
+/* ____ Visualização dados candidato _____*/
+#dados_candidato{
+	margin: 30px 0;
+	height: 200px;
+}
+
+#dados_candidato p, #dados_candidato span{
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#dados_candidato span{
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+
+/* ____ Configurações carrossel _____*/
+#projetos h2{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-bottom: 18px; 
+}
+
+.slick-slide img{
+	max-width: 90%;
+}
+
+.slick-initialized{
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next{
+	background-color: transparent;
+}
+
+.slick-prev:before, .slick-next:before{
+	content: "";
+  	display: inline-block;
+  	vertical-align: middle;
+  	width: 0; 
+ 	height: 0; 
+}
+
+.slick-prev:before{
+	margin-right: 10px;
+ 	border-top: 15px solid transparent;
+ 	border-bottom: 15px solid transparent; 
+ 	border-right: 15px solid #C4C8CC; 
+}
+
+.slick-next:before{
+	margin-left: 10px;
+	border-top: 15px solid transparent;
+  	border-bottom: 15px solid transparent;
+  	border-left: 15px solid #C4C8CC;
+}
+
+
+/* ____________________ Rodapé ____________________*/
+
+footer{
+	text-align: center;
+	background-image: linear-gradient(to right, #5A5789, #2D2C45);
+	color: #fff;
+	padding: 20px 0;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 840px){
+	#section_cadastro_dados > .center{
+		flex-direction: column;
+	}
+
+	#section01, #section02{
+		width: 90%;
+		margin: 0 auto;
+		padding: 30px 5%;
+	}
+
+	#section01{
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	#section01, #section02{
+		width: 100%;
+		padding: 30px 5%;
+	}
+
+	#form_telefone{
+		flex-direction: column;
+	}
+
+	.fone{
+		width: 100%;
+	}
+}
